@@ -1,4 +1,4 @@
-# ⚡ Flexi Frame Starter
+# ⚡ React Dashboard Starter Kit
 
 A modern, customizable React + Vite starter kit with Tailwind CSS, ShadCN UI, and a clean layout featuring a collapsible sidebar, topbar, toast notifications, and multiple utility pages. Ideal for dashboards, admin panels, and creative projects.
 
@@ -26,16 +26,14 @@ A modern, customizable React + Vite starter kit with Tailwind CSS, ShadCN UI, an
 ### 1. Clone the Repo
 
 ```bash
-git clone https://github.com/your-username/flexi-frame-starter.git
-cd flexi-frame-starter
+git clone https://github.com/abhishekra07/react-dashboard-starter-kit.git
+cd react-dashboard-starter-kit
 ```
 
 ### 2. Install Dependencies
 
 ```bash
 npm install
-# or
-yarn
 ```
 
 ### 3. Start the Dev Server
@@ -44,7 +42,7 @@ yarn
 npm run dev
 ```
 
-Visit `http://localhost:5173` to view the app.
+Visit `http://localhost:8080` to view the app.
 
 ---
 
@@ -72,22 +70,6 @@ src/
 - `Ask a Question` – Text area and link cards + GitHub form section
 - `Tables Demo` – Data table example
 - `Buttons Showcase` – All button styles with variations
-
----
-
-## 🔔 Toast Notifications
-
-We use a custom toast system styled using Tailwind. Example usage:
-
-```ts
-import { toast } from '@/lib/toast';
-
-toast({
-  title: '✅ Profile Updated',
-  description: 'Your profile has been updated successfully.',
-  variant: 'success',
-});
-```
 
 ---
 
@@ -123,4 +105,18 @@ npm run preview
 
 ## 📸 Screenshots
 
-_Add screenshots of the sidebar, welcome page, toast, etc._
+![Sign In Page](screenshots/Login_Page.png)
+
+![Sign Up Page](screenshots/SignUp_Page.png)
+
+![Forgot Password Page](screenshots/Forgot_Password_Page.png)
+
+![Welcome Page](screenshots/Welcome_Page.png)
+
+![Dashboard Page](screenshots/Dashboard_Page.png)
+
+![Dark Theme](screenshots/Dark_THeme.png)
+
+![Data Table Page](screenshots/Data_Table_Page.png)
+
+👨‍💻 **Developed by:** _Abhishek Rathore_
