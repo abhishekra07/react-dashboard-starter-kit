@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Modern Design System for Professional Applications */
+
+@layer base {
+  :root {
+    /* Core Colors */
+    --background: 0 0% 100%;
+    --foreground: 220 13% 18%;
+
+    /* Brand Colors */
+    --primary: 199 89% 48%;
+    --primary-foreground: 0 0% 100%;
+    --primary-muted: 199 89% 48% / 0.1;
+
+    /* UI Element Colors */
+    --card: 0 0% 100%;
+    --card-foreground: 220 13% 18%;
+    --card-hover: 220 13% 97%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 13% 18%;
+
+    --secondary: 220 14% 96%;
+    --secondary-foreground: 220 13% 18%;
+    --secondary-hover: 220 14% 93%;
+
+    --muted: 220 14% 96%;
+    --muted-foreground: 220 9% 46%;
+
+    --accent: 220 14% 96%;
+    --accent-foreground: 220 13% 18%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --success: 142 71% 45%;
+    --success-foreground: 0 0% 100%;
+
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 100%;
+
+    --info: 217 91% 60%;
+    --info-foreground: 0 0% 100%;
+
+    /* Border & Input */
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 199 89% 48%;
+
+    /* Sidebar Colors */
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 220 13% 18%;
+    --sidebar-primary: 199 89% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 220 14% 97%;
+    --sidebar-accent-foreground: 220 13% 18%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 199 89% 48%;
+    --sidebar-muted: 220 9% 46%;
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(
+      135deg,
+      hsl(199 89% 48%),
+      hsl(217 91% 60%)
+    );
+    --gradient-subtle: linear-gradient(
+      180deg,
+      hsl(0 0% 100%),
+      hsl(220 14% 98%)
+    );
+    --gradient-card: linear-gradient(135deg, hsl(0 0% 100%), hsl(220 14% 99%));
+
+    /* Shadows */
+    --shadow-sm: 0 1px 2px 0 hsl(220 13% 18% / 0.05);
+    --shadow: 0 1px 3px 0 hsl(220 13% 18% / 0.1),
+      0 1px 2px -1px hsl(220 13% 18% / 0.1);
+    --shadow-md: 0 4px 6px -1px hsl(220 13% 18% / 0.1),
+      0 2px 4px -2px hsl(220 13% 18% / 0.1);
+    --shadow-lg: 0 10px 15px -3px hsl(220 13% 18% / 0.1),
+      0 4px 6px -4px hsl(220 13% 18% / 0.1);
+    --shadow-elegant: 0 8px 30px -10px hsl(199 89% 48% / 0.3);
+
+    /* Animation */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-fast: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+
+    --radius: 0.75rem;
+  }
+
+  .dark {
+    /* Core Colors */
+    --background: 220 13% 9%;
+    --foreground: 220 14% 96%;
+
+    /* Brand Colors */
+    --primary: 199 89% 48%;
+    --primary-foreground: 220 13% 9%;
+    --primary-muted: 199 89% 48% / 0.15;
+
+    /* UI Element Colors */
+    --card: 220 13% 11%;
+    --card-foreground: 220 14% 96%;
+    --card-hover: 220 13% 13%;
+
+    --popover: 220 13% 11%;
+    --popover-foreground: 220 14% 96%;
+
+    --secondary: 220 13% 15%;
+    --secondary-foreground: 220 14% 96%;
+    --secondary-hover: 220 13% 18%;
+
+    --muted: 220 13% 15%;
+    --muted-foreground: 220 9% 60%;
+
+    --accent: 220 13% 15%;
+    --accent-foreground: 220 14% 96%;
+
+    --destructive: 0 62% 50%;
+    --destructive-foreground: 220 14% 96%;
+
+    --success: 142 71% 45%;
+    --success-foreground: 220 14% 96%;
+
+    --warning: 38 92% 50%;
+    --warning-foreground: 220 13% 9%;
+
+    --info: 217 91% 60%;
+    --info-foreground: 220 13% 9%;
+
+    /* Border & Input */
+    --border: 220 13% 18%;
+    --input: 220 13% 18%;
+    --ring: 199 89% 48%;
+
+    /* Sidebar Colors */
+    --sidebar-background: 220 13% 11%;
+    --sidebar-foreground: 220 14% 96%;
+    --sidebar-primary: 199 89% 48%;
+    --sidebar-primary-foreground: 220 13% 9%;
+    --sidebar-accent: 220 13% 15%;
+    --sidebar-accent-foreground: 220 14% 96%;
+    --sidebar-border: 220 13% 18%;
+    --sidebar-ring: 199 89% 48%;
+    --sidebar-muted: 220 9% 60%;
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(
+      135deg,
+      hsl(199 89% 48%),
+      hsl(217 91% 60%)
+    );
+    --gradient-subtle: linear-gradient(
+      180deg,
+      hsl(220 13% 11%),
+      hsl(220 13% 9%)
+    );
+    --gradient-card: linear-gradient(
+      135deg,
+      hsl(220 13% 11%),
+      hsl(220 13% 13%)
+    );
+
+    /* Shadows */
+    --shadow-sm: 0 1px 2px 0 hsl(0 0% 0% / 0.2);
+    --shadow: 0 1px 3px 0 hsl(0 0% 0% / 0.3), 0 1px 2px -1px hsl(0 0% 0% / 0.3);
+    --shadow-md: 0 4px 6px -1px hsl(0 0% 0% / 0.3),
+      0 2px 4px -2px hsl(0 0% 0% / 0.3);
+    --shadow-lg: 0 10px 15px -3px hsl(0 0% 0% / 0.4),
+      0 4px 6px -4px hsl(0 0% 0% / 0.4);
+    --shadow-elegant: 0 8px 30px -10px hsl(199 89% 48% / 0.4);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+
+  /* Custom Scrollbar Styles */
+  .custom-scrollbar {
+    scrollbar-width: thin;
+    scrollbar-color: hsl(var(--muted-foreground) / 0.3) transparent;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 3px;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: hsl(var(--muted-foreground) / 0.3);
+    border-radius: 3px;
+    transition: background-color 0.2s ease;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: hsl(var(--muted-foreground) / 0.5);
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-corner {
+    background: transparent;
+  }
+
+  /* Responsive background pattern */
+  .main-background {
+    background-color: hsl(var(--background));
+    background-image: radial-gradient(
+      circle at 1px 1px,
+      hsl(var(--muted) / 0.3) 1px,
+      transparent 0
+    );
+    background-size: 20px 20px;
+  }
+
+  /* Card backgrounds with subtle gradients */
+  .card-gradient {
+    background: var(--gradient-card);
+  }
+
+  /* Smooth transitions for layout changes */
+  .layout-transition {
+    transition: var(--transition-smooth);
+  }
+}
